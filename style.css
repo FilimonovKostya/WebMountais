@@ -3,12 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  width: 100%;
+}
+
 .wrapper {
   font-family: "Exo", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2em;
 }
+
 header {
   height: 100vh;
   background: url(images/mountain.webp);
@@ -21,15 +27,17 @@ header {
   justify-content: center;
   text-align: center;
 }
+
 .header-heading span {
   font-size: 60px;
-  font-family: "Myriad Pro" sans-serif;
+  font-family: "Myriad Pro"sans-serif;
   font-weight: 400;
   letter-spacing: 2.4px;
   line-height: 75px;
   width: 130px;
   text-align: center;
 }
+
 .play-button {
   width: 60px;
   height: 60px;
@@ -41,12 +49,14 @@ header {
   cursor: pointer;
   margin-top: 50px;
 }
+
 .play-button__tre {
   margin-left: 7px;
   border-style: solid;
   border-width: 15px 0 15px 26px;
   border-color: transparent transparent transparent #f4f5f7;
 }
+
 input[type="button"] {
   margin-top: 40px;
   border: none;
@@ -62,6 +72,7 @@ input[type="button"] {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
 .text-header {
   color: #282828;
   font-size: 14px;
@@ -69,11 +80,13 @@ input[type="button"] {
   letter-spacing: 0.56px;
   opacity: 0.6;
 }
+
 .two-section {
   width: 100%;
   height: 100vh;
   display: flex;
 }
+
 .one-section {
   display: flex;
   flex-direction: column;
@@ -81,6 +94,7 @@ input[type="button"] {
   align-items: center;
   width: 60%;
 }
+
 .one-section__title {
   color: #282828;
   font-size: 40px;
@@ -90,10 +104,12 @@ input[type="button"] {
   margin-top: 16px;
   margin-bottom: 45px;
 }
+
 .one-section__title span {
   color: #ff6d6d;
   letter-spacing: 1.6px;
 }
+
 .one-section__subtitle {
   /* Style for "Aenean eu" */
 
@@ -106,6 +122,7 @@ input[type="button"] {
   /* Text style for "Aenean eu" */
   letter-spacing: 0.64px;
 }
+
 .one-section__content {
   display: flex;
   flex-direction: column;
@@ -114,6 +131,7 @@ input[type="button"] {
   height: 100vh;
   width: 680px;
 }
+
 .design {
   align-self: flex-start;
   color: #ff6d6d;
@@ -125,6 +143,7 @@ input[type="button"] {
 
   letter-spacing: 3.2px;
 }
+
 .second-section {
   width: 40%;
   height: 100vh;
@@ -145,11 +164,13 @@ input[type="button"] {
   border-width: 0 0 560px 760px;
   border-color: transparent transparent #ff6d6d transparent;
 }
+
 .features {
   height: 85vh;
   background-color: #f6f5f3;
   position: relative;
 }
+
 .features-title {
   text-align: center;
   padding-top: 138px;
@@ -165,6 +186,7 @@ input[type="button"] {
 
   letter-spacing: 3.2px;
 }
+
 .features-title__big-title {
   /* Style for "Some aweso" */
 
@@ -183,17 +205,20 @@ img[alt="pen"] {
   top: 0;
   left: 97px;
 }
+
 img[alt="ear"] {
   position: absolute;
   top: 0;
   right: 198px;
 }
+
 img[alt="coffe"] {
   position: absolute;
   bottom: 0;
   background-color: #f6f5f3;
   right: 84px;
 }
+
 .features-items {
   width: 400px;
   height: 230px;
@@ -203,6 +228,7 @@ img[alt="coffe"] {
   justify-content: center;
   align-items: center;
 }
+
 .features-items__title {
   /* Style for "Some aweso" */
 
@@ -214,6 +240,7 @@ img[alt="coffe"] {
   /* Text style for "S, ome awe" */
   letter-spacing: 0.88px;
 }
+
 .features-items__text {
   /* Style for "Donec sed" */
   text-align: center;
@@ -225,15 +252,18 @@ img[alt="coffe"] {
   /* Text style for "Donec sed" */
   letter-spacing: 0.64px;
 }
+
 .features-items-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: auto;
 }
+
 .mac {
-  height: 660px;
+  min-height: 660px;
   position: relative;
+  height: 1px;
 }
 
 .mac::after {
@@ -250,20 +280,25 @@ img[alt="coffe"] {
   border-color: transparent transparent #ff6d6d transparent;
   z-index: -1;
 }
+
 .mac__lattop {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: inherit;
+  flex-wrap: wrap;
+  height: 100%;
 }
+
 .mac__text {
   width: 500px;
 }
+
 img[alt="macbook"] {
   width: 830px;
   height: 467px;
 }
+
 .mac__text__design {
   /* Style for "NEW DESIGN" */
 
@@ -276,6 +311,7 @@ img[alt="macbook"] {
   /* Text style for "N, EW DESI" */
   letter-spacing: 3.2px;
 }
+
 .respnsive {
   /* Style for "Resposive" */
   width: 440px;
@@ -290,10 +326,12 @@ img[alt="macbook"] {
   letter-spacing: 1.6px;
   /* Text style for "...." */
 }
+
 .one-section__point {
   color: #ff6d6d;
   letter-spacing: 1.6px;
 }
+
 .black-blok {
   height: 648px;
   width: 100%;
@@ -309,6 +347,7 @@ img[alt="macbook"] {
   flex-wrap: wrap;
   padding-top: 110px;
 }
+
 .black-blok__autors {
   width: 325px;
   height: 280px;
@@ -318,6 +357,7 @@ img[alt="macbook"] {
   justify-content: center;
   align-items: center;
 }
+
 .name {
   /* Style for "Jonathon D" */
 
@@ -329,6 +369,7 @@ img[alt="macbook"] {
 
   letter-spacing: 0.88px;
 }
+
 .job {
   /* Style for "Co Founder" */
 
@@ -338,6 +379,7 @@ img[alt="macbook"] {
   font-weight: 500;
   line-height: 49.97px;
 }
+
 .information {
   /* Style for "“Aenean eu" */
   width: 324px;
@@ -352,19 +394,23 @@ img[alt="macbook"] {
   letter-spacing: 0.64px;
   text-align: center;
 }
+
 .black-blok__img {
   width: 76px;
   height: 76px;
   background-color: #4e4e5e;
   border: 2px solid #1d1e24;
 }
+
 .black-blok__images {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
   filter: invert();
+  flex-wrap: wrap;
 }
+
 .block-ios {
   height: 754px;
   width: 100%;
@@ -379,12 +425,14 @@ img[alt="macbook"] {
   align-items: center;
   justify-content: flex-start;
 }
+
 .block-ios__text {
-  width: 647px;
+  max-width: 647px;
   height: 178px;
   text-align: center;
   margin-top: 108px;
 }
+
 .block-contacts {
   height: 470px;
   background-color: #323969;
@@ -394,10 +442,12 @@ img[alt="macbook"] {
   justify-content: space-around;
   flex-direction: column;
 }
+
 .block-contacts__text {
   width: 680px;
   text-align: center;
 }
+
 .over {
   /* Style for "Over 1000" */
 
@@ -409,11 +459,14 @@ img[alt="macbook"] {
   /* Text style for "O, ver 100" */
   letter-spacing: 1.6px;
 }
+
 .inputs-block {
   width: 80%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
+
 input[name="name"],
 input[name="email"],
 input[name="password"] {
@@ -428,6 +481,7 @@ input[name="password"] {
   opacity: 0.5;
   padding: 18px 0 18px 29px;
 }
+
 input::placeholder {
   color: #f6f5f3;
   text-transform: uppercase;
@@ -440,6 +494,7 @@ input::placeholder {
   /* Text style for "YOUR EMAIL" */
   letter-spacing: 0.64px;
 }
+
 .button_up {
   /* Stycle for "Rounded Re" */
   width: 258px;
@@ -453,9 +508,11 @@ input::placeholder {
   outline: none;
   position: relative;
 }
+
 .oveer {
   position: relative;
 }
+
 .oveer::after {
   content: "30 days free trial for all.";
 
@@ -468,6 +525,7 @@ input::placeholder {
   top: -40px;
   right: 30px;
 }
+
 .oveer::before {
   content: url(images/ARROW.png);
 
@@ -475,6 +533,7 @@ input::placeholder {
   top: -44px;
   left: 0;
 }
+
 .sign-in p {
   /* Style for "By Signing" */
 
@@ -489,10 +548,12 @@ input::placeholder {
   /* Text style for "terms & Se" */
   letter-spacing: 0.64px;
 }
+
 .sign-in a {
   text-decoration: underline;
   color: #f6f5f3;
 }
+
 footer {
   height: 375px;
   width: 100%;
@@ -502,12 +563,14 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   font-size: 14px;
+  flex-wrap: wrap;
 }
 
 .footer-first-block {
   width: 231px;
-  height: 148px;
+  height: auto;
 }
+
 .start {
   /* Style for "Start Ex" */
 
@@ -517,11 +580,13 @@ footer {
   font-weight: 400;
   line-height: 33.6px;
 }
+
 .start span {
   color: #ffffff;
   position: relative;
   z-index: 5;
 }
+
 .start span::after {
   content: url(images/Polygon_1.webp);
   position: absolute;
@@ -529,6 +594,7 @@ footer {
   right: -11px;
   z-index: -1;
 }
+
 .text-first {
   /* Style for "Aenean lac" */
   width: 231px;
@@ -542,10 +608,12 @@ footer {
   /* Text style for "Aenean lac" */
   letter-spacing: 0.56px;
 }
+
 .generous-block {
-  width: 120px;
+  width: auto;
   height: auto;
 }
+
 .generous-text {
   /* Style for "Support" */
   width: 230px;
@@ -557,9 +625,11 @@ footer {
   /* Text style for "S, upport" */
   letter-spacing: 0.88px;
 }
+
 .generous-subtitile li {
   list-style: none;
 }
+
 .generous-subtitile li a {
   text-decoration: none;
   /* Style for "Help Cente" */
@@ -572,26 +642,31 @@ footer {
   /* Text style for "Help Cente" */
   letter-spacing: 0.56px;
 }
+
 input[placeholder="email"] {
   position: relative;
-  width: 263px;
+  width: 100%;
   color: indigo;
   height: 49px;
   border-radius: 3px;
   border: 1px solid #4e4e5e;
   background-color: #cccccc;
 }
+
 .footer-wreaaper {
-  width: 953px;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
+
 .telega {
-  width: auto;
+  width: 100%;
   height: auto;
   position: relative;
 }
+
 .telega::after {
   content: url(images/10.webp);
   display: flex;
@@ -606,10 +681,11 @@ input[placeholder="email"] {
   border: 1px solid #ff6d6d;
   background-color: #ff6d6d;
   top: 0;
-  right: -197px;
+  right: 0px;
   cursor: pointer;
 }
-.generous-block-icon{
+
+.generous-block-icon {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
