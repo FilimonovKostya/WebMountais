@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
-html {
+html{
+
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+body
+{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .wrapper {
   font-family: "Exo", sans-serif;
   font-weight: 400;
@@ -93,6 +102,7 @@ input[type="button"] {
   justify-self: center;
   align-items: center;
   width: 60%;
+  padding: 0 10px;
 }
 
 .one-section__title {
@@ -129,7 +139,7 @@ input[type="button"] {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 680px;
+  max-width: 680px;
 }
 
 .design {
@@ -169,6 +179,7 @@ input[type="button"] {
   height: 85vh;
   background-color: #f6f5f3;
   position: relative;
+  padding: 0 10px;
 }
 
 .features-title {
@@ -222,7 +233,7 @@ img[alt="coffe"] {
 .features-items {
   width: 400px;
   height: 230px;
-
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,6 +275,7 @@ img[alt="coffe"] {
   min-height: 660px;
   position: relative;
   height: 1px;
+  overflow: hidden;
 }
 
 .mac::after {
@@ -286,8 +298,8 @@ img[alt="coffe"] {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: 100%;
+    height: 100%;
+    padding: 0 10px;
 }
 
 .mac__text {
@@ -295,8 +307,9 @@ img[alt="coffe"] {
 }
 
 img[alt="macbook"] {
-  width: 830px;
-  height: 467px;
+  width: 100%;
+  max-width: 830px;
+  /* height: auto; */
 }
 
 .mac__text__design {
@@ -464,7 +477,7 @@ img[alt="macbook"] {
   width: 80%;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  
 }
 
 input[name="name"],
@@ -472,7 +485,7 @@ input[name="email"],
 input[name="password"] {
   /* Style for "Rounded Re" */
   width: 263px;
-  height: 49px;
+  
   border-radius: 3px;
   border: 1px solid #ffffff;
   background-color: darkslateblue;
@@ -480,6 +493,7 @@ input[name="password"] {
   color: white;
   opacity: 0.5;
   padding: 18px 0 18px 29px;
+  margin-right: 5px;
 }
 
 input::placeholder {
@@ -511,6 +525,7 @@ input::placeholder {
 
 .oveer {
   position: relative;
+  margin-left: 10px;
 }
 
 .oveer::after {
@@ -565,7 +580,9 @@ footer {
   font-size: 14px;
   flex-wrap: wrap;
 }
-
+.footer-wreaaper  .generous-block:last-of-type{
+  min-width: 350px;
+}
 .footer-first-block {
   width: 231px;
   height: auto;
@@ -690,4 +707,69 @@ input[placeholder="email"] {
   justify-content: space-evenly;
   align-items: center;
   width: 230px;
+}
+
+
+/* АДАПТИВЧИК */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+.mac__lattop{
+  flex-direction: column-reverse;
+}
+img[alt="macbook"]{
+  width: 70%;
+}  
+.footer-wreaaper .generous-block:last-of-type{
+  min-width: 70%;
+}
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-wreaaper .generous-block:last-of-type{
+    min-width: 70%;
+  }
+  .inputs-block{
+    flex-direction: column;
+    width: 70%;
+  }
+   
+  input[name="name"], input[name="email"], input[name="password"]{
+    margin-right: 0px;
+    width: 100%;
+    margin: 1% 0px;
+  }
+  .oveer{
+    text-align: center;
+    margin-left: 0px;
+  }
+  .oveer::before{
+    top:67%;
+    left: 27%;
+  }
+  .oveer::after{
+    top: 121%;
+    right: 40%;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+
 }
