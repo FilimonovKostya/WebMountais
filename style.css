@@ -176,7 +176,7 @@ input[type="button"] {
 }
 
 .features {
-  height: 85vh;
+  min-height: 85vh;
   background-color: #f6f5f3;
   position: relative;
   padding: 0 10px;
@@ -303,7 +303,7 @@ img[alt="coffe"] {
 }
 
 .mac__text {
-  width: 500px;
+  max-width: 500px;
 }
 
 img[alt="macbook"] {
@@ -346,7 +346,7 @@ img[alt="macbook"] {
 }
 
 .black-blok {
-  height: 648px;
+  min-height: 648px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -437,6 +437,7 @@ img[alt="macbook"] {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding:  0 10px;
 }
 
 .block-ios__text {
@@ -457,7 +458,7 @@ img[alt="macbook"] {
 }
 
 .block-contacts__text {
-  width: 680px;
+  max-width: 680px;
   text-align: center;
 }
 
@@ -743,33 +744,159 @@ img[alt="macbook"]{
   input[name="name"], input[name="email"], input[name="password"]{
     margin-right: 0px;
     width: 100%;
-    margin: 1% 0px;
+    margin: 0% 0px;
   }
   .oveer{
     text-align: center;
     margin-left: 0px;
   }
   .oveer::before{
-    top:67%;
-    left: 27%;
+    content: none;
   }
   .oveer::after{
     top: 121%;
-    right: 40%;
+    right: 35%;
   }
+  .features-items{
+    text-align: center;
+  }
+  img[alt="pen"]{
+    left: 0;
+  }
+  img[alt="ear"]{
+    right: 0;
+  }
+  img[alt="coffe"]{
+    right: 0;
+  }
+  .mac__lattop{
+    flex-direction: column-reverse;
+  }
+  img[alt="macbook"]{
+    width: 70%;
+  }  
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  img[alt="pen"]{
+    left: 0;
+  }
+  img[alt="ear"]{
+    right: 0;
+  }
+  img[alt="coffe"]{
+    right: 0;
+  }
+  .mac__lattop{
+    flex-direction: column-reverse;
+  }
+  img[alt="macbook"]{
+    width: 70%;
+  }  
+  .features-items{
+    text-align: center;
+  }
+  .inputs-block{
+    flex-direction: column;
+    width: 70%;
+  }
+   
+  input[name="name"], input[name="email"], input[name="password"]{
+    margin-right: 0px;
+    width: 100%;
+    margin: 1% 0px;
+  }
+  .oveer::before{
+    content: none;
+  }
+  .oveer::after{
+    content: none;
+  }
+  .oveer{
+    text-align: center;
+  }
+  .footer-wreaaper .generous-block:last-of-type{
+    min-width: 70%;
+  }
+  .footer-wreaaper{
+    display: block;
+  }
+  input[name="name"], input[name="email"], input[name="password"]{
+    margin: 0% 0px;
+  }
+  .generous-block-icon{
+    padding-bottom: 50px;
+    margin-top: 12px;
+  }
+  .mac__text__design{
+    text-align: center;
+  }
+  
+}
 
+@media (max-width:650px){
+  .black-blok{
+    padding-top: 10px;
+  }
+  .features-items-wrapper{
+    flex-wrap: wrap;
+  }
+  .features-title__big-title {
+    margin-bottom: 20px;
+  }
+  img[alt="ear"]{
+    display: none;
+  }
+  img[alt="coffe"]{
+    display: none;
+  }
+  .second-section{
+    display: none;
+  }
+  .one-section{
+    width: 100%;
+  }
+  .mac__text__design{
+    text-align: center;
+  }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-
+  img[alt="pen"]{
+    display: none;
+  }
+  .block-ios__text {
+    margin-top: 20px;  
+  }
+  .respnsive{
+    width: 100%;
+  }
+  .mac__text{
+    width: 100%;
+  }
 }
 
 /* Iphone 5 */
 @media (max-width: 320px) {
-
+  .button_up {
+    width: 100%;
+  }
+  .oveer{
+    margin-left: 0px;
+  }
+  .black-blok__images{
+    height: 500px;
+    flex-direction: column;
+  }
+  .one-section__title {
+    letter-spacing: 0.6px;
+  }
+  .mac__text__design{
+    text-align:right;
+  }
+  .sign-in{
+    padding: 0 10px;
+  }
 }
